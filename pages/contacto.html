@@ -9,19 +9,25 @@
 </head>
 <body>
     <header>
+        <!-- Enacebezado -->
+        <div class="logo">
             <a class="nav-brand" href=../index.html><img src="../image/logo.png" alt="EMINƎM"></a>
-            
+        </div>
             <nav>
-                <ul>
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="../pages/discografia.html">DISCOGRAFIA</a></li>
-                    <li><a href="../pages/filmografia.html">FILMOGRAFIA</a></li>
-                    <li><a href="../pages/galeria.html">GALERIA</a></li>
+                <input type="checkbox" id="menu">
+                <label for="menu"> ☰ </label>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a href="../index.html" class="nav-menu-link nav-link">HOME</a></li>
+                    <li class="nav-menu-item"><a href="/pages/discografia.html" class="nav-menu-link nav-link">DISCOGRAFIA</a></li>
+                    <li class="nav-menu-item"><a href="/pages/filmografia.html" class="nav-menu-link nav-link">FILMOGRAFIA</a></li>
+                    <li class="nav-menu-item"><a href="/pages/galeria.html" class="nav-menu-link nav-link">GALERIA</a></li>
+                    <li class="nav-menu-item"><a href="/pages/contacto.html" class="nav-menu-link nav-link">CONTACTO</a></li>
                 </ul>
             </nav>
+            
     </header>
     <main>
-        <div class="container">
+        <div class="cont">
             <h2>Contacto</h2>
                     <p class="lead">Comentanos que te parecio la página y que te gustaria ver en el futuro. muchas gracias por llegar hasta acá</p>
         </div>  
@@ -45,9 +51,9 @@
                 </fieldset>
                 </form>
         </div>
-        <div>
-            <img src="../image/saludo.gif" alt="saludos ">
-        </div>
+        <div class="img-home">
+            <img id="img-home" src="../image/saludo.gif"alt="saludos" width="100%">
+</div>
     </main>
     <footer>
         <div class="container footer">

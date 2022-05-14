@@ -149,7 +149,7 @@ body {
     ;
     color: white;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 header {
     display: flex;
@@ -174,7 +174,7 @@ a {
 }
 img {
     border-radius: 10%;
-    border: 2px solid #000;
+    border: 0px solid #000;
 }
 iframe {
     border-radius: 10%;
@@ -199,4 +199,41 @@ footer {
 }
 .clearfix {
     clear: both;
+}
+
+@keyframes anima{
+	0%{
+		top: 0;
+	}
+	50%{
+		top: -20px;
+	}
+	100%{
+		top: 0;
+	}
+}
+@keyframes rotando{
+	from{
+		transform: rotate(0);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.eminemcito img{
+	position: absolute;
+	width: 100%;
+	animation-name: anima, rotando;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 3s, 10s;
+}
+.eminemcito{
+	position: absolute;
+	width: 100px;
+	top: 200px;
+	left: 200px;
+}
+.box-img:hover{
+	transform: scale(1.1);
 }
